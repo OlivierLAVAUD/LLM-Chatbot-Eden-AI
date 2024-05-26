@@ -1,4 +1,6 @@
-# LLM Chatbot with Eden AI and context json document
+![](image.png)
+# LLM Chatbot with Eden AI and context document (json)
+
 
 This is a LLM Chatbot were the answers are depending on a json file context document with give.
 
