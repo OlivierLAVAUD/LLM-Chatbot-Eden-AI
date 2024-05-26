@@ -9,8 +9,8 @@ This is a LLM Chatbot were the answers are depending on a json file context docu
 - clone the repo
 - Sign in and get a Eden AI API key on website https://www.edenai.co/
 - create a config.py file base on template config.sample.py
--       modify config.py: complete with the eden api key you obtain: EDENAI_API_KEY = "{eden_api_key}"
--       modify config.py: get a context json file document and specify the name in DOC_SOURCE = "{doc_name.json}
+- modify config.py: complete with the eden api key you obtain: EDENAI_API_KEY = "{eden_api_key}"
+- modify config.py: get a context json file document and specify the name in DOC_SOURCE = "{doc_name.json}
 
 - create a conda environment  ``` conda create -n LLM-Chatbot-Eden-AI ```
 - activate donda environnment ``` conda activate LLM-Chatbot-Eden-AI ```
