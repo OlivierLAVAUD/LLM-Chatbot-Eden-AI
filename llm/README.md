@@ -1,34 +1,49 @@
-# Chatbox NLP : Chat with an Avatar
+# LLM Chatbot with Eden AI and context json document
 
-Guess who you are talking to. Natural answering of the real Avatar of?
+This is a LLM Chatbot were the answers are depending on a json file context document with give.
 
-# Installation
+## Prepare Python Environment
 
-1. clone the repo repo
+- clone the repo
+- Sign in and get a Eden AI API key on website https://www.edenai.co/
+- create a config.py file base on template config.sample.py
+-       modify config.py: complete with the eden api key you obtain: EDENAI_API_KEY = "{eden_api_key}"
+-       modify config.py: get a context json file document and specify the name in DOC_SOURCE = "{doc_name.json}
 
-2. ``` pip install -r requirements.txt ```
+- create a conda environment  ``` conda create -n LLM-Chatbot-Eden-AI ```
+- activate donda environnment ``` conda activate LLM-Chatbot-Eden-AI ```
+- install the python package  ``` pip install -r requirements.txt ```
 
-# EDEN API KEY Setting   
+# Start LLM Chatbot API
 
-modify the name of config.sample.py with config.sample
-Create an eden ai account and set your eden ai api key in the config.py file 
-EDENAI_API = ""
+``` cd llm ```
+``` python main.py ```
+``` cd .. ```
 
----
+# Start http server
 
-# Running
+``` cd front ```
+``` Python -m http.server 8000 ```
 
-	```Python main.py```
-    
-You can run it also on docker  
-# Construire l'image Docker 
-    ```docker build -t chat . ```
+# Run & play
+Lanch you internet browser on http://localhost:8000/
 
-# Execution de l'image Docker
-    ```docker run -p 8010:8010 chat ```
+# otherwise Docker Installation 
 
-# Execution via Docker
-      ```docker run -d -p 8000:8000 chat-front ```
+## run Docker Desktop 
+   - Launch Docker Desktop on Windows or Linux
 
-# Execution de l'image du front
-	```python -m http.server 8000 ```
+## build and run LLM engine on Docker
+    ```cd llm ```
+    ```docker build -t llm-engine . ```
+    ```docker run -p 8010:8010 llm-engine ```
+    ```cd .. ```
+
+## build and run frontend chatbot on Docker image  
+    ```cd front ```
+    ```docker build -t chatbot-front . ```
+    `` docker run -d -p 8000:8000 chatbot-front```
+    ```cd .. ```
+
+# Run & play
+Lanch you internet browser on http://localhost:8000/

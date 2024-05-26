@@ -5,7 +5,7 @@ import fastapi
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
-from config import NLP_HOST, NLP_PORT, CV_SOURCE, EDENAI_API_KEY, CONTEXT
+from config import NLP_HOST, NLP_PORT, DOC_SOURCE, EDENAI_API_KEY, CONTEXT
 
 app = FastAPI()
 
@@ -18,7 +18,7 @@ app.add_middleware(
 )
 
 
-with open(CV_SOURCE, 'r', encoding='utf-8') as file:
+with open(DOC_SOURCE, 'r', encoding='utf-8') as file:
     info_cv = json.load(file)
 
 
@@ -31,7 +31,7 @@ async def chat(prompt):
         provider = "meta"
         payload = {
             "providers": provider,
-            "model": "gpt-3.5-turbo",
+       ##    "model": "gpt-3.5-turbo",
             "text": prompt,
             "chatbot_global_action": CONTEXT + json.dumps(info_cv),
             "previous_history": [],
