@@ -1,1 +1,2 @@
-./llm/config.py
+llm/config.py
+llm/olavaud.json

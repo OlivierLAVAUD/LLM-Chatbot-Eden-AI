@@ -6,3 +6,4 @@ EDENAI_API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYWRmZDViM
 
 DOC_SOURCE = "olavaud.json"
 CONTEXT = "Agit en tant qu'Avatar d'Olivier LAVAUD qui répond aux questions relatives a son cv ci-apres: """
+
