@@ -1,6 +1,4 @@
 var nlp_port = "8010"
-var test = "toto"
-
 var chatUrl = `http://localhost:${nlp_port}/chat/`;
 
 
