@@ -14,7 +14,7 @@ This is a LLM Chatbot were the answers are depending on a json file context docu
 
 - create a conda environment  ``` conda create -n LLM-Chatbot-Eden-AI ```
 - activate donda environnment ``` conda activate LLM-Chatbot-Eden-AI ```
-- install the python package  ``` pip install -r requirements.txt ```
+- install the python package  ``` pip install -r requirements.txt  ```
 
 # Start LLM Chatbot API
 
@@ -44,7 +44,7 @@ Lanch you internet browser on http://localhost:8000/
 ## build and run frontend chatbot on Docker image  
     ```cd front ```
     ```docker build -t chatbot-front . ```
-    `` docker run -d -p 8000:8000 chatbot-front```
+    ``` docker run -p 8000:8000 chatbot-front```
     ```cd .. ```
 
 # Run & play

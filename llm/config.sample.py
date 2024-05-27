@@ -3,5 +3,5 @@ NLP_PORT = 8010
 
 EDENAI_API_KEY = ""
 
-CV_SOURCE = "olavaud.json"
-CONTEXT = "Agit en tant qu'Avatar d'Olivier LAVAUD qui répond aux questions relatives a son cv ci-apres: """
+DOC_SOURCE = "lafontaine.json"
+CONTEXT = "Agit en tant qu'Avatar d'un auteur qui répond aux questions relatives a son oeuvre ci-apres: """
